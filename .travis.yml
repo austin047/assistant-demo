@@ -22,11 +22,11 @@ deploy:
   script: bx-blue-green-travis
   on:
     branch: master
-    repo: Watson/watson-conversation-demo-redesign
+    repo: watson-developer-cloud/assistant-demo
   skip_cleanup: true
 - provider: script
   script: BX_APP=watson-conversation-duo-test bx-blue-green-travis
   on:
     branch: dev
-    repo: Watson/watson-conversation-demo-redesign
+    repo: watson-developer-cloud/assistant-demo
   skip_cleanup: true
